@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Batch OnError="Continue" ListVersion="1" 
+ViewName="270C0508-A54F-4387-8AD0-49686D685EB2">
+   <Method ID="1" Cmd="New">
+      <Field Name='ID'>New</Field>
+      <Field Name="Title">Value</Field>
+      <Field Name="Date_Column">2007-3-25</Field>
+      <Field Name="Date_Time_Column">
+         2006-1-11T09:15:30Z</Field>
+   </Method>
+</Batch>

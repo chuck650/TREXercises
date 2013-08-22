@@ -1,0 +1,64 @@
+<html>
+	
+<head>
+
+<title>I Corps Exercise Planner</title>
+
+<!--[if lt IE 9]>
+<script src="../Assets/js/html5shiv.js"></script>
+
+<![endif]-->
+
+
+<script type="text/javascript" language="javascript"
+src="../Assets/js/jquery.min.js"></script>
+
+<script type="text/javascript" language="javascript"
+src="../Assets/js/jquery.SPServices.min.js"></script>
+
+<script type="text/javascript">
+ var thisUsersValue = $().SPServices.SPGetCurrentUser({
+   fieldName: "UserName",
+   debug: false
+ });
+
+
+var listitems = $(document).ready(function() {
+ $().SPServices({
+   operation: "GetListItems",
+   async: false,
+   listName: "Announcements",
+   CAMLViewFields: "<ViewFields Properties='True'><FieldRef Name='Title'
+/></ViewFields>",
+   CAMLQueryOptions:
+"<QueryOptions><ExpandUserField>True</ExpandUserField></QueryOptions>",
+   completefunc: function (xData, Status) {
+     $(xData.responseXML).SPFilterNode("z:row").each(function() {
+       var liHtml = "<li>" + $(this).attr("ows_Title") + "</li>";
+       $("#tasksUL").append(liHtml);
+     });
+   }
+ });
+});
+
+
+</script>
+
+</head>
+
+<body>
+
+<nav>
+		
+<a href="../Assets/css/">CSS</a> | 
+
+<a href="../Assets/js/">JavaScript</a>
+
+</nav>
+
+<section>
+<ul id="tasksUL"/>
+</section>
+</body>
+
+</html>

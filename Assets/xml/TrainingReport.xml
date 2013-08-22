@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TREX:TrainingReport
+version="1.0"
+unit="This is the reporting unit"
+report_dtg="2010-10-25T08:32:47"
+xmlns:TREX="http://www.us.army.mil/ICorps/G3/TREX"
+>
+	<CGEvents>
+		<Event
+		unit="The is the executing unit"
+		title="Event Title"
+		description="This is the description"
+		start="2010-04-15T08:32:47"
+		end="2010-04-15T08:32:47"
+		location="This is the location"
+		remark="This is the remark"
+		editor="Editing User"
+		modified="2010-04-15T08:32:47"
+		/>
+	</CGEvents>
+	<CONUSEvents>
+		<Event
+		unit="The is the executing unit"
+		title="Event Title"
+		description="This is the description"
+		start="2010-04-15T08:32:47"
+		end="2010-04-15T08:32:47"
+		location="This is the location"
+		remark="This is the remark"
+		editor="Editing User"
+		modified="2010-04-15T08:32:47"
+		/>
+	</CONUSEvents>
+	<OCONUSEvents>
+		<Event
+		unit="The is the executing unit"
+		title="Event Title"
+		description="This is the description"
+		start="2010-04-15T08:32:47"
+		end="2010-04-15T08:32:47"
+		location="This is the location"
+		remark="This is the remark"
+		editor="Editing User"
+		modified="2010-04-15T08:32:47"
+		/>
+	</OCONUSEvents>
+	<CommanderComments>This is the commanders remarks.</CommanderComments>
+</TREX:TrainingReport>

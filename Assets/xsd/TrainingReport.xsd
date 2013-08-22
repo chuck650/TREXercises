@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<xs:schema 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.us.army.mil/ICorps/G3/TREX"
+	xmlns:TREX="http://www.us.army.mil/ICorps/G3/TREX"
+>
+
+<xs:element name="TrainingReport">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="CGEvents" type="TREX:EventsType" />
+			<xs:element name="CONUSEvents" type="TREX:EventsType" />
+			<xs:element name="OCONUSEvents" type="TREX:EventsType" />
+			<xs:element name="CommanderComments" type="xs:string"/>
+		</xs:sequence>
+		<xs:attribute name="version" type="xs:decimal"/>
+		<xs:attribute name="unit" type="xs:token" use="required"/>
+		<xs:attribute name="report_dtg" type="xs:dateTime" use="required"/>
+	</xs:complexType>
+</xs:element>
+
+<xs:complexType name="EventsType">
+	<xs:sequence>
+		<xs:element name="Event" type="TREX:EventType" minOccurs="0" maxOccurs="unbounded" />
+	</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EventType">
+	<xs:attribute name="unit" type="xs:token" use="required"/>
+	<xs:attribute name="title" type="xs:token" use="required"/>
+	<xs:attribute name="description" type="xs:string" use="required"/>
+	<xs:attribute name="start" type="xs:dateTime" use="required"/>
+	<xs:attribute name="end" type="xs:dateTime" use="required"/>
+	<xs:attribute name="location" type="xs:string" use="required"/>
+	<xs:attribute name="remark" type="xs:string"/>
+	<xs:attribute name="editor" type="xs:token" use="required"/>
+	<xs:attribute name="modified" type="xs:token" use="required"/>
+	<xs:anyAttribute/>
+</xs:complexType>
+
+</xs:schema>

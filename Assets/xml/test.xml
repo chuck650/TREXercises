@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<soap:Body>
+<GetListItemsResponse xmlns="http://schemas.microsoft.com/sharepoint/soap/">
+<GetListItemsResult><listitems xmlns:s='uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882'
+     xmlns:dt='uuid:C2F41010-65B3-11d1-A29F-00AA00C14882'
+     xmlns:rs='urn:schemas-microsoft-com:rowset'
+     xmlns:z='#RowsetSchema'>
+<rs:data ItemCount="4">
+   <z:row ows_DRU='1;#2/2 SBCT' ows_Title='Event A.1' ows_ID='21' ows_Location='Training Area A.1' ows_Description='Description for event A in training area A.1' ows_Executing_x0020_Unit='Subunit A' ows_EventDate='2010-04-15 08:32:47' ows_EndDate='2010-04-17 08:32:47' ows_Modified='2010-04-09 07:52:13' ows_Editor='3;#John Q Soldier' />
+   <z:row ows_DRU='2;#3/2 SBCT' ows_Title='Event B.1' ows_ID='17' ows_Location='Training Area B.1' ows_Description='Description for event B in training area B.1' ows_Executing_x0020_Unit='Subunit B' ows_EventDate='2010-04-19 08:32:47' ows_EndDate='2010-04-21 08:32:47' ows_Modified='2010-04-09 07:52:13' ows_Editor='3;#John Q Soldier' />
+   <z:row ows_DRU='3;#4/2 SBCT' ows_Title='Event C.1' ows_ID='10' ows_Location='Training Area C.1' ows_Description='Description for event C in training area C.1' ows_Executing_x0020_Unit='Subunit C' ows_EventDate='2010-04-21 08:32:47' ows_EndDate='2010-04-25 08:32:47' ows_Modified='2010-04-09 07:52:13' ows_Editor='3;#John Q Soldier' />
+</rs:data>
+</listitems>
+</GetListItemsResult>
+</GetListItemsResponse>
+</soap:Body>
+</soap:Envelope>
+	   
